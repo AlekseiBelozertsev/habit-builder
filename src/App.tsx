@@ -3,9 +3,12 @@ import "./App.css";
 
 function App() {
     return (
-        <div className='App'>
-            <h1>This is the end.</h1>
-        </div>
+        <>
+            <div className='App'>
+                <h1 className="text-3xl font-bold underline">This is the end.</h1>
+            </div>
+        </>
+        
     );
 }
 
