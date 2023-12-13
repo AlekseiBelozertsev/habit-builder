@@ -1,13 +1,16 @@
 import React from "react";
-import "./App.css";
+import Header from "./collections/Header/Header";
 
 function App() {
   return (
-    <>
-      <div className='App'>
-        <h1 className='text-3xl font-bold underline'>This is the end.</h1>
-      </div>
-    </>
+    <div                  className='flex w-screen h-full container bg-gray-700'>
+      <Header 
+      
+      
+      
+      
+      headline={""} subtitle={""} />
+    </div>
   );
 }
 
