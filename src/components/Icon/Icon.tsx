@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 
 type IconProps = {
   path: string;
@@ -6,11 +6,7 @@ type IconProps = {
   h: number;
 };
 
-const Icon: React.FC<IconProps> = ({
-  path,
-  w,
-  h,
-}) => {
+const Icon: React.FC<IconProps> = ({ path, w, h }) => {
   return <img src={path} width={w} height={h} alt={`Icon`} />;
 };
 
