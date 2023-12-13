@@ -9,7 +9,7 @@ function App() {
       
       
       
-      headline={""} subtitle={""} />
+      headline={""}        subtitle={""} />
     </div>
   );
 }
