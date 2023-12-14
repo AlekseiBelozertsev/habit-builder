@@ -1,5 +1,4 @@
-import React from "react";
-import { ButtonProps, ButtonType } from "../../components/Button";
+import { ButtonProps } from "../../components/Button";
 import RoundButton from "../../components/Button/RoundButton";
 import RectangleButton from "../../components/Button/RectangleButton";
 

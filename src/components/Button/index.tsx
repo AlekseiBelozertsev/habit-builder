@@ -1,4 +1,3 @@
-import React from "react";
 import { buttonFactory } from "../../utils/tools/buttonFactory";
 
 export type ButtonType = "rectangle" | "round";
