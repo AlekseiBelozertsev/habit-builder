@@ -9,6 +9,7 @@ export type ButtonProps = {
   width: number;
   height: number;
   background: string;
+  padding: number;
   text?: string;
   textColor?: string;
 };

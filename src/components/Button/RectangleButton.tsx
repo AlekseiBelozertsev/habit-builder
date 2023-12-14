@@ -7,12 +7,13 @@ const RectangleButton: React.FC<ButtonProps> = ({
   width,
   background,
   text,
+  padding,
   textColor,
 }) => {
   return (
     <button
       onClick={onClick}
-      className={`flex items-center justify-center border-none h-${height} ${background} px-2 rounded-full`}
+      className={`flex items-center justify-center border-none h-${height} py-1 px-${padding} ${background} rounded-full`}
     >
       <span className={`font-['Roboto'] text-sm font-medium ${textColor}`}>
         {text}
