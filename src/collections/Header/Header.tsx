@@ -14,6 +14,7 @@ const Header = () => {
       </div>
       <div className='flex flex-row gap-2'>
         <Button
+          padding={0}
           height={6}
           width={6}
           iconPath={searchIcon}
@@ -22,6 +23,7 @@ const Header = () => {
           type={`round`}
         />
         <Button
+          padding={0}
           height={6}
           width={6}
           iconPath={menuIcon}

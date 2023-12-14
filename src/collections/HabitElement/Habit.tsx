@@ -1,5 +1,5 @@
 import React from "react";
-import { Button, Icon } from "../../components";
+import { Button } from "../../components";
 const dummyIcon = require("../../assets/dummy.svg").default;
 const arrowIcon = require("../../assets/arrow.svg").default;
 
@@ -7,7 +7,9 @@ const Habit: React.FC = () => {
   return (
     <div className='flex container flex-row justify-between items-center rounded py-3 px-4 bg-white'>
       <div className='flex flex-row justify-center items-center gap-3'>
-        <Icon h={18} w={18} path={dummyIcon} />
+        <div>
+          <img className={`w-full`} src={dummyIcon} alt='Picture' />
+        </div>
         <div className='flex-column justify-center items-center'>
           <h3 className={`font-['Roboto'] font-bold`}>{`Dummy title`}</h3>
           <span
@@ -16,6 +18,7 @@ const Habit: React.FC = () => {
         </div>
       </div>
       <Button
+        padding={0}
         height={6}
         width={6}
         iconPath={arrowIcon}

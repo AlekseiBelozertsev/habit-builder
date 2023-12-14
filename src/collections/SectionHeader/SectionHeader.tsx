@@ -10,6 +10,7 @@ const SectionHeader: React.FC<SectionHeaderProps> = ({ title }) => {
     <div className='flex flex-row justify-between items-center px-4 h-16'>
       <h2 className={`font-['Roboto'] font-bold`}>{title}</h2>
       <Button
+        padding={2}
         height={9}
         width={6}
         textColor={`text-color`}
