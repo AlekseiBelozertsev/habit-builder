@@ -10,6 +10,8 @@ export type ButtonProps = {
   width: number;
   height: number;
   background: string;
+  text?: string;
+  textColor?: string;
 };
 
 const Button = (props: ButtonProps) => {
