@@ -2,9 +2,9 @@ import { Habit, SectionHeader } from "../../collections";
 
 const Home = () => {
   return (
-    <div className='flex flex-col justify-start grow'>
+    <div className='flex w-full container flex-col justify-start grow'>
       <SectionHeader title={`Top habits`} />
-      <div className='grid grid-cols-1 grid-rows-6 h-full gap-0.5 divide-y divide-gray-200'>
+      <div className='grid lg:grid-cols-4 lg:gap-6 s:grid-cols-1 s:grid-rows-6 w-full h-full lg:pb-6 gap-0.5 divide-y divide-gray-200'>
         <Habit />
         <Habit />
         <Habit />

@@ -3,7 +3,7 @@ import { SectionHeader } from "../../collections";
 
 const MyHabits = () => {
   return (
-    <div className='flex flex-col justify-start grow'>
+    <div className='flex w-full container flex-col justify-start grow'>
       <SectionHeader title={`My habits`} />
     </div>
   );

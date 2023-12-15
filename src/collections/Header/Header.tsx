@@ -5,7 +5,7 @@ const searchIcon = require("../../assets/search.svg").default;
 
 const Header = () => {
   return (
-    <header className='flex w-screen container flex-row justify-between items-center rounded-b px-4 py-2 bg-white'>
+    <header className='flex container flex-row justify-between items-center rounded-b px-4 py-2 bg-white'>
       <div className='flex flex-col'>
         <h1 className={`font-['Roboto'] font-bold`}>{"Habits builder"}</h1>
         <span className="font-['Roboto'] text-sm font-normal">
