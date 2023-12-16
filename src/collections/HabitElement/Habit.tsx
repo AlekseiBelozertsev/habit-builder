@@ -11,9 +11,9 @@ const Habit: React.FC = () => {
           <img className={`w-full`} src={dummyIcon} alt='Picture' />
         </div>
         <div className='flex-column lg:h-full lg:text-center justify-center items-center'>
-          <h3 className={`font-['Roboto'] font-bold`}>{`Dummy title`}</h3>
+          <h3 className={`font-['Roboto, font-sans'] font-bold`}>{`Dummy title`}</h3>
           <span
-            className={`font-['Roboto'] text-gray-600 text-sm`}
+            className={`font-['Roboto, font-sans'] text-gray-600 text-sm`}
           >{`Dummy subtitle`}</span>
         </div>
       </div>
