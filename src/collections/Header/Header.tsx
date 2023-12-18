@@ -3,11 +3,13 @@ import { Button } from "../../components";
 const menuIcon = require("../../assets/menu.svg").default;
 const searchIcon = require("../../assets/search.svg").default;
 
-const Header = () => {
+const Header: React.FC = () => {
   return (
     <header className='flex container flex-row justify-between items-center rounded-b px-4 py-2 bg-white'>
       <div className='flex flex-col'>
-        <h1 className={`font-['Roboto, font-sans'] font-bold`}>{"Habits builder"}</h1>
+        <h1 className={`font-['Roboto, font-sans'] font-bold`}>
+          {"Habits builder"}
+        </h1>
         <span className="font-['Roboto, font-sans'] text-sm font-normal">
           {"Simple app for better living"}
         </span>

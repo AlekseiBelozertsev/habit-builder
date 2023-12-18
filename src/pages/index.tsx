@@ -1,3 +1,4 @@
 import Home from "./HomePage/Home";
+import MyHabits from "./MyHabits/MyHabits";
 
-export { Home };
+export { Home, MyHabits };

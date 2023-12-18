@@ -1,10 +1,10 @@
-import React from "react";
-import { SectionHeader } from "../../collections";
+import { ScrollableCollection, SectionHeader } from "../../collections";
 
-const MyHabits = () => {
+const MyHabits: React.FC = () => {
   return (
     <div className='flex w-full container flex-col justify-start grow'>
       <SectionHeader title={`My habits`} />
+      <ScrollableCollection />
     </div>
   );
 };
