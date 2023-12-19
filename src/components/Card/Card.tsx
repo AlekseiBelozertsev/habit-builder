@@ -1,9 +1,16 @@
 import React from "react";
 
-const Card: React.FC = () => {
+type CardProps = {
+  imagePath: string;
+  title: string;
+  subtitle: string;
+  onClick: () => void;
+}
+
+const Card: React.FC<CardProps> = () => {
   return (
     <div className='flex flex-col gap-3 p-2'>
-      <div className='rounded aspect-square max-h-24 max-w-24 bg-slate-200'></div>
+      <div className='rounded aspect-square w-24 bg-slate-200'></div>
       <div className='flex flex-col'>
         <h3
           className={`font-['Roboto, font-sans'] font-bold `}
