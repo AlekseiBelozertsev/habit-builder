@@ -3,20 +3,28 @@ import { Button } from "../../components";
 const dummyIcon = require("../../assets/dummy.svg").default;
 const arrowIcon = require("../../assets/arrow.svg").default;
 
-const Habit: React.FC = () => {
+type HabitProps = {
+  id: string;
+  title: string;
+  subtitle: string;
+  onClick: () => void;
+};
+
+const Habit: React.FC<HabitProps> = ({ title, subtitle, onClick }) => {
   return (
-    <div className='flex w-full lg:flex-col flex-row lg:justify-center justify-between items-center rounded py-3 px-4 bg-white'>
+    <div
+      className='flex w-full lg:flex-col flex-row lg:justify-center justify-between items-center rounded py-2 lg:py-4 px-4 bg-white'
+      onClick={onClick}
+    >
       <div className='flex lg:flex-col flex-row justify-center items-center gap-3'>
-        <div>
+        <div className='aspect-square w-9 lg:w-24'>
           <img className={`w-full`} src={dummyIcon} alt='Picture' />
         </div>
         <div className='flex-column lg:h-full lg:text-center justify-center items-center'>
-          <h3
-            className={`font-['Roboto, font-sans'] font-bold`}
-          >{`Dummy title`}</h3>
-          <span
-            className={`font-['Roboto, font-sans'] text-gray-600 text-sm`}
-          >{`Dummy subtitle`}</span>
+          <h3 className={`font-['Roboto, font-sans'] font-bold`}>{title}</h3>
+          <span className={`font-['Roboto, font-sans'] text-gray-600 text-sm`}>
+            {subtitle}
+          </span>
         </div>
       </div>
       <div className={`flex justify-center items-center lg:hidden`}>
