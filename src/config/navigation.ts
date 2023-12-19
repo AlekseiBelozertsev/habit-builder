@@ -1,32 +1,30 @@
-const homeIcon = require("../assets/home.svg").default;
-const likedIcon = require("../assets/liked.svg").default;
-const searchIcon = require("../assets/search.svg").default;
-const awardIcon = require("../assets/award.svg").default;
+import { awardIcon, homeIcon, likedIcon, searchIcon } from "../assets";
 
 export type NavigationType = {
   label: string;
-  onClick: () => void;
+  path: string;
   iconSrc: string;
 }[];
+
 export const navigation: NavigationType = [
   {
     label: "Home",
-    onClick: () => null,
+    path: "/",
     iconSrc: homeIcon,
   },
   {
     label: "My habits",
-    onClick: () => null,
+    path: "/my-habits",
     iconSrc: likedIcon,
   },
   {
     label: "My achievemnts",
-    onClick: () => null,
+    path: "/",
     iconSrc: awardIcon,
   },
   {
     label: "Search",
-    onClick: () => null,
+    path: "/",
     iconSrc: searchIcon,
   },
 ];
