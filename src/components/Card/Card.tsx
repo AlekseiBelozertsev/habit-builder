@@ -7,18 +7,20 @@ type CardProps = {
   onClick: () => void;
 };
 
-const Card: React.FC<CardProps> = () => {
+const Card: React.FC<CardProps> = ({ title, subtitle, imagePath, onClick }) => {
   return (
-    <div className='flex flex-col gap-3'>
-      <div className='rounded aspect-square w-24 lg:w-40 bg-slate-200'></div>
-      <div className='flex flex-col'>
-        <h3
-          className={`font-['Roboto, font-sans'] font-bold `}
-        >{`Dummy title`}</h3>
-        <span
-          className={`font-['Roboto, font-sans'] text-gray-600 text-sm`}
-        >{`Dummy subtitle`}</span>
+    <div
+      className='flex flex-col justify-start h-full gap-1 lg:gap-3'
+      onClick={onClick}
+    >
+      <div className='flex align-middle justify-center p-1 rounded aspect-square w-24 lg:w-40 bg-slate-200'>
+        <img
+          src={imagePath}
+          className={`w-1/2`}
+          alt={`It's an image of "${title}" habit.`}
+        />
       </div>
+      <div className='flex flex-col justify-between'></div>
     </div>
   );
 };
