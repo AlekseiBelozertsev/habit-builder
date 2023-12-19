@@ -5,12 +5,12 @@ type CardProps = {
   title: string;
   subtitle: string;
   onClick: () => void;
-}
+};
 
 const Card: React.FC<CardProps> = () => {
   return (
-    <div className='flex flex-col gap-3 p-2'>
-      <div className='rounded aspect-square w-24 bg-slate-200'></div>
+    <div className='flex flex-col gap-3'>
+      <div className='rounded aspect-square w-24 lg:w-40 bg-slate-200'></div>
       <div className='flex flex-col'>
         <h3
           className={`font-['Roboto, font-sans'] font-bold `}
