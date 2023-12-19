@@ -15,11 +15,7 @@ const SectionHeader: React.FC<SectionHeaderProps> = ({ title }) => {
         width={6}
         textColor={`text-color`}
         background={`bg-slate-300`}
-        onClick={() =>
-          alert(
-            "Hahaha, you died and you shit yourself, peed and you died in front of your crash.",
-          )
-        }
+        onClick={() => alert("Hahaha, you dead.")}
         type={`rectangle`}
         text={`Show all`}
       />

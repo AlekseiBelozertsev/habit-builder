@@ -11,7 +11,9 @@ const Habit: React.FC = () => {
           <img className={`w-full`} src={dummyIcon} alt='Picture' />
         </div>
         <div className='flex-column lg:h-full lg:text-center justify-center items-center'>
-          <h3 className={`font-['Roboto, font-sans'] font-bold`}>{`Dummy title`}</h3>
+          <h3
+            className={`font-['Roboto, font-sans'] font-bold`}
+          >{`Dummy title`}</h3>
           <span
             className={`font-['Roboto, font-sans'] text-gray-600 text-sm`}
           >{`Dummy subtitle`}</span>
@@ -24,9 +26,7 @@ const Habit: React.FC = () => {
           width={6}
           iconPath={arrowIcon}
           background={`bg-slate-200`}
-          onClick={() =>
-            alert("Hahaha, you dead and you shit yourself and also peed.")
-          }
+          onClick={() => alert("Hahaha, you dead.")}
           type={`round`}
         />
       </div>

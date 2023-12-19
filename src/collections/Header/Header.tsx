@@ -30,7 +30,7 @@ const Header: React.FC = () => {
           width={6}
           iconPath={menuIcon}
           background={`bg-slate-200`}
-          onClick={() => alert("Hahaha, you dead and you shit yourself.")}
+          onClick={() => alert("Hahaha, you dead.")}
           type={`round`}
         />
       </div>
