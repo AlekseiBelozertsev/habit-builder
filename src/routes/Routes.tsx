@@ -1,6 +1,7 @@
 import { createBrowserRouter } from "react-router-dom";
 import App from "../App";
-import { Home, MyHabits } from "../pages";
+import { HabitPage, Home, MyHabits } from "../pages";
+import { allHabits } from "../config";
 
 export const router = createBrowserRouter([
   {
@@ -9,6 +10,7 @@ export const router = createBrowserRouter([
     children: [
       { path: "", element: <Home /> },
       { path: "my-habits", element: <MyHabits /> },
+      { path: "/my-habits/:id", element: <HabitPage data={allHabits} /> },
     ],
   },
 ]);
