@@ -34,7 +34,7 @@ const Habit: React.FC<HabitProps> = ({ title, subtitle, onClick }) => {
           width={6}
           iconPath={arrowIcon}
           background={`bg-slate-200`}
-          onClick={() => alert("Hahaha, you dead.")}
+          onClick={() => null}
           type={`round`}
         />
       </div>
