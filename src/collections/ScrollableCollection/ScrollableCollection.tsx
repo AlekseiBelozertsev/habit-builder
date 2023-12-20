@@ -11,7 +11,7 @@ const ScrollableCollection: React.FC<ScrollableCollectionProps> = ({
 }) => {
   const collection = myHabits;
   return (
-    <div className='flex flex-col w-full p-2 gap-2 bg-white'>
+    <div className='flex flex-col w-full p-2 gap-2 rounded bg-white'>
       <h3 className={`font-['Roboto, font-sans'] font-bold`}>{title}</h3>
       <div
         className={`flex flex-row w-full gap-2 rounded overflow-y-auto max-h-[300px]`}
