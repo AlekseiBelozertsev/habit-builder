@@ -5,7 +5,7 @@ const MyHabits: React.FC = () => {
     <div className='flex w-full container flex-col justify-start grow'>
       <br />
       <ScrollableCollection title={`My habits`} />
-      <SectionHeader title={`All habits`} />
+      <SectionHeader title={`Top habits`} />
       <List numOfRows={4} />
     </div>
   );

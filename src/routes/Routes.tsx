@@ -2,7 +2,6 @@ import { createBrowserRouter } from "react-router-dom";
 import App from "../App";
 import { HabitPage, Home, MyHabits } from "../pages";
 import { allHabits } from "../config";
-
 export const router = createBrowserRouter([
   {
     path: "/",
