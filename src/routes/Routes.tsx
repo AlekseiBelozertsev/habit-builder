@@ -11,6 +11,7 @@ export const router = createBrowserRouter([
       { path: "", element: <Home /> },
       { path: "my-habits", element: <MyHabits /> },
       { path: "/my-habits/:id", element: <HabitPage data={allHabits} /> },
+      { path: "/:id", element: <HabitPage data={allHabits} /> },
     ],
   },
 ]);
