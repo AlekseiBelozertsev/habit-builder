@@ -17,7 +17,7 @@ const List: React.FC<ListProps> = ({ numOfRows }) => {
           id={item.id}
           title={item.title}
           subtitle={item.subtitle}
-          onClick={() => navigate(`${item.id}`)}
+          onClick={() => navigate(`/${item.id}`)}
           key={i}
         />
       ))}
