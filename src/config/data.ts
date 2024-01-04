@@ -1,128 +1,190 @@
 const dummyIcon = require("../assets/dummy.svg").default;
-// export type Streak = {
-//   id: string;
-//   title: string;
-//   duration: number;
-//   isFinished: boolean;
-//   isInterrupted: boolean;
-// };
+export type Streak = {
+  id: number;
+  title: string;
+  description: string;
+  targetDuration: number;
+  currentDuration: number;
+  startDate: Date;
+  endDate: Date;
+  completed: boolean;
+};
 
 export type Habit = {
   id: string;
   title: string;
   subtitle: string;
   illustration: string;
-  //   streaks: Streak[];
+  streaks: Streak[];
   isFinished: boolean;
 };
 
-// export const allStreaks: Streak[] = [
-//   {
-//     id: "s1",
-//     title: "Morning Brush",
-//     duration: 14,
-//     isFinished: false,
-//     isInterrupted: false,
-//   },
-//   {
-//     id: "s2",
-//     title: "Evening Brush",
-//     duration: 14,
-//     isFinished: false,
-//     isInterrupted: false,
-//   },
-//   {
-//     id: "s3",
-//     title: "Daytime Rinse",
-//     duration: 14,
-//     isFinished: false,
-//     isInterrupted: false,
-//   },
-//   {
-//     id: "s4",
-//     title: "Morning Run",
-//     duration: 7,
-//     isFinished: true,
-//     isInterrupted: false,
-//   },
-//   {
-//     id: "s5",
-//     title: "Evening Workout",
-//     duration: 7,
-//     isFinished: false,
-//     isInterrupted: false,
-//   },
-//   {
-//     id: "s6",
-//     title: "Healthy Eating",
-//     duration: 21,
-//     isFinished: true,
-//     isInterrupted: false,
-//   },
-//   {
-//     id: "s7",
-//     title: "Vocabulary Practice",
-//     duration: 30,
-//     isFinished: false,
-//     isInterrupted: true,
-//   },
-//   {
-//     id: "s8",
-//     title: "Daily Conversation",
-//     duration: 15,
-//     isFinished: false,
-//     isInterrupted: false,
-//   },
-// ];
+export const allStreaks: Streak[] = [
+  {
+    id: 0,
+    title: "Meditation",
+    description: "10 minutes of mindfulness",
+    targetDuration: 10,
+    currentDuration: 5,
+    startDate: new Date("2024-01-01"),
+    endDate: new Date("2024-01-31"),
+    completed: false,
+  },
+  {
+    id: 1,
+    title: "Learn a New Language",
+    description: "Practice for 15 minutes",
+    targetDuration: 15,
+    currentDuration: 7,
+    startDate: new Date("2024-01-01"),
+    endDate: new Date("2024-01-31"),
+    completed: false,
+  },
+  {
+    id: 2,
+    title: "Hydrate",
+    description: "Drink 8 glasses of water",
+    targetDuration: 8,
+    currentDuration: 4,
+    startDate: new Date("2024-01-01"),
+    endDate: new Date("2024-01-31"),
+    completed: false,
+  },
+  {
+    id: 3,
+    title: "Write in Journal",
+    description: "Reflect for 10 minutes",
+    targetDuration: 10,
+    currentDuration: 5,
+    startDate: new Date("2024-01-01"),
+    endDate: new Date("2024-01-31"),
+    completed: false,
+  },
+  {
+    id: 4,
+    title: "No Social Media",
+    description: "Take a break for 24 hours",
+    targetDuration: 24,
+    currentDuration: 12,
+    startDate: new Date("2024-01-01"),
+    endDate: new Date("2024-01-31"),
+    completed: false,
+  },
+  {
+    id: 5,
+    title: "Healthy Eating",
+    description: "Include vegetables in every meal",
+    targetDuration: 7,
+    currentDuration: 3,
+    startDate: new Date("2024-01-01"),
+    endDate: new Date("2024-01-31"),
+    completed: false,
+  },
+  {
+    id: 6,
+    title: "Gratitude Practice",
+    description: "List 3 things you're grateful for",
+    targetDuration: 3,
+    currentDuration: 2,
+    startDate: new Date("2024-01-01"),
+    endDate: new Date("2024-01-31"),
+    completed: false,
+  },
+  {
+    id: 7,
+    title: "Early Wake-up",
+    description: "Wake up at 6 AM",
+    targetDuration: 30,
+    currentDuration: 15,
+    startDate: new Date("2024-01-01"),
+    endDate: new Date("2024-01-31"),
+    completed: false,
+  },
+  {
+    id: 8,
+    title: "Digital Detox",
+    description: "No screen time after 9 PM",
+    targetDuration: 30,
+    currentDuration: 15,
+    startDate: new Date("2024-01-01"),
+    endDate: new Date("2024-01-31"),
+    completed: false,
+  },
+  {
+    id: 9,
+    title: "Stretching",
+    description: "10 minutes of stretching exercises",
+    targetDuration: 10,
+    currentDuration: 5,
+    startDate: new Date("2024-01-01"),
+    endDate: new Date("2024-01-31"),
+    completed: false,
+  },
+];
 
 export const allHabits: Habit[] = [
   {
-    id: "h1",
-    title: "Teeth Brushing",
-    subtitle: "Something is written here",
+    id: "h0",
+    title: "Exercise Routine",
+    subtitle: "Stay active and healthy",
     illustration: dummyIcon,
+    streaks: [allStreaks[0], allStreaks[1], allStreaks[2]], // Add streaks as needed
+    isFinished: false,
+  },
+  {
+    id: "h1",
+    title: "Mindfulness Meditation",
+    subtitle: "Calm your mind",
+    illustration: dummyIcon,
+    streaks: [allStreaks[3]], // Add streaks as needed
     isFinished: false,
   },
   {
     id: "h2",
-    title: "Exercise",
-    subtitle: "Something was there",
+    title: "Language Learning",
+    subtitle: "Expand your language skills",
     illustration: dummyIcon,
+    streaks: [allStreaks[4]], // Add streaks as needed
     isFinished: false,
   },
   {
     id: "h3",
-    title: "Stop eating sugar",
-    subtitle: "Something is",
+    title: "Hydration Challenge",
+    subtitle: "Drink more water",
     illustration: dummyIcon,
+    streaks: [allStreaks[5]], // Add streaks as needed
     isFinished: false,
   },
   {
     id: "h4",
-    title: "Learning a Language",
-    subtitle: "Something is cool",
+    title: "Reflective Journaling",
+    subtitle: "Express your thoughts",
     illustration: dummyIcon,
+    streaks: [allStreaks[6]], // Add streaks as needed
     isFinished: false,
   },
   {
     id: "h5",
-    title: "Wake up in time",
-    subtitle: "Something is not",
+    title: "Social Media Detox",
+    subtitle: "Take a break from social media",
     illustration: dummyIcon,
+    streaks: [allStreaks[7]], // Add streaks as needed
     isFinished: false,
   },
   {
     id: "h6",
-    title: "Stop interrupting",
-    subtitle: "Something is eating me!",
+    title: "Healthy Eating Habits",
+    subtitle: "Incorporate more veggies",
     illustration: dummyIcon,
+    streaks: [allStreaks[8]], // Add streaks as needed
     isFinished: false,
   },
   {
     id: "h7",
-    title: "Drink more water",
-    subtitle: "Something terrible",
+    title: "Gratitude Practice",
+    subtitle: "Cultivate gratitude",
     illustration: dummyIcon,
+    streaks: [allStreaks[9]], // Add streaks as needed
     isFinished: false,
   },
 ];
