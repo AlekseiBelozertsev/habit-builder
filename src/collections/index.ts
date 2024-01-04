@@ -1,8 +1,15 @@
 import Header from "./Header/Header";
-import Habit from "./HabitElement/Habit";
+import HabitComponent from "./HabitComponent/HabitComponent";
 import SectionHeader from "./SectionHeader/SectionHeader";
 import ScrollableCollection from "./ScrollableCollection/ScrollableCollection";
 import List from "./List/List";
 import Footer from "./Footer/Footer";
 
-export { Header, Habit, SectionHeader, ScrollableCollection, List, Footer };
+export {
+  Header,
+  HabitComponent,
+  SectionHeader,
+  ScrollableCollection,
+  List,
+  Footer,
+};

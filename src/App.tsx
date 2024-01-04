@@ -1,6 +1,4 @@
-import { Outlet, Route, Routes } from "react-router";
-import { Habit, Header, SectionHeader } from "./collections";
-import Footer from "./collections/Footer/Footer";
+import { Route, Routes } from "react-router";
 import { Dashboard, HabitPage, Home, MyHabits, PageNotFound } from "./pages";
 import { BrowserRouter } from "react-router-dom";
 import { allHabits } from "./config";

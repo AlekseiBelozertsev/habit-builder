@@ -10,7 +10,7 @@ type HabitProps = {
   onClick: () => void;
 };
 
-const Habit: React.FC<HabitProps> = ({ title, subtitle, onClick }) => {
+const HabitComponent: React.FC<HabitProps> = ({ title, subtitle, onClick }) => {
   return (
     <div
       className='flex w-full lg:flex-col flex-row lg:justify-center justify-between items-center rounded py-2 lg:py-4 px-4 bg-white'
@@ -42,4 +42,4 @@ const Habit: React.FC<HabitProps> = ({ title, subtitle, onClick }) => {
   );
 };
 
-export default Habit;
+export default HabitComponent;
