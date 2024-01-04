@@ -1,5 +1,5 @@
-import { allHabits, myHabits, Habit } from "./data";
+import { allHabits, myHabits, Habit, Streak, allStreaks } from "./data";
 import { NavigationType, navigation } from "./navigation";
 
-export { navigation, allHabits, myHabits };
-export type { NavigationType, Habit };
+export { navigation, allHabits, myHabits, allStreaks };
+export type { NavigationType, Habit, Streak };

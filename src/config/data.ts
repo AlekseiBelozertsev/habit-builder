@@ -1,8 +1,8 @@
 const dummyIcon = require("../assets/dummy.svg").default;
 export type Streak = {
-  id: number;
+  id: string;
   title: string;
-  description: string;
+  subtitle: string;
   targetDuration: number;
   currentDuration: number;
   startDate: Date;
@@ -21,9 +21,9 @@ export type Habit = {
 
 export const allStreaks: Streak[] = [
   {
-    id: 0,
+    id: "0",
     title: "Meditation",
-    description: "10 minutes of mindfulness",
+    subtitle: "10 minutes of mindfulness",
     targetDuration: 10,
     currentDuration: 5,
     startDate: new Date("2024-01-01"),
@@ -31,9 +31,9 @@ export const allStreaks: Streak[] = [
     completed: false,
   },
   {
-    id: 1,
+    id: "1",
     title: "Learn a New Language",
-    description: "Practice for 15 minutes",
+    subtitle: "Practice for 15 minutes",
     targetDuration: 15,
     currentDuration: 7,
     startDate: new Date("2024-01-01"),
@@ -41,9 +41,9 @@ export const allStreaks: Streak[] = [
     completed: false,
   },
   {
-    id: 2,
+    id: "2",
     title: "Hydrate",
-    description: "Drink 8 glasses of water",
+    subtitle: "Drink 8 glasses of water",
     targetDuration: 8,
     currentDuration: 4,
     startDate: new Date("2024-01-01"),
@@ -51,9 +51,9 @@ export const allStreaks: Streak[] = [
     completed: false,
   },
   {
-    id: 3,
+    id: "3",
     title: "Write in Journal",
-    description: "Reflect for 10 minutes",
+    subtitle: "Reflect for 10 minutes",
     targetDuration: 10,
     currentDuration: 5,
     startDate: new Date("2024-01-01"),
@@ -61,9 +61,9 @@ export const allStreaks: Streak[] = [
     completed: false,
   },
   {
-    id: 4,
+    id: "4",
     title: "No Social Media",
-    description: "Take a break for 24 hours",
+    subtitle: "Take a break for 24 hours",
     targetDuration: 24,
     currentDuration: 12,
     startDate: new Date("2024-01-01"),
@@ -71,9 +71,9 @@ export const allStreaks: Streak[] = [
     completed: false,
   },
   {
-    id: 5,
+    id: "5",
     title: "Healthy Eating",
-    description: "Include vegetables in every meal",
+    subtitle: "Include vegetables in every meal",
     targetDuration: 7,
     currentDuration: 3,
     startDate: new Date("2024-01-01"),
@@ -81,9 +81,9 @@ export const allStreaks: Streak[] = [
     completed: false,
   },
   {
-    id: 6,
+    id: "6",
     title: "Gratitude Practice",
-    description: "List 3 things you're grateful for",
+    subtitle: "List 3 things you're grateful for",
     targetDuration: 3,
     currentDuration: 2,
     startDate: new Date("2024-01-01"),
@@ -91,9 +91,9 @@ export const allStreaks: Streak[] = [
     completed: false,
   },
   {
-    id: 7,
+    id: "7",
     title: "Early Wake-up",
-    description: "Wake up at 6 AM",
+    subtitle: "Wake up at 6 AM",
     targetDuration: 30,
     currentDuration: 15,
     startDate: new Date("2024-01-01"),
@@ -101,9 +101,9 @@ export const allStreaks: Streak[] = [
     completed: false,
   },
   {
-    id: 8,
+    id: "8",
     title: "Digital Detox",
-    description: "No screen time after 9 PM",
+    subtitle: "No screen time after 9 PM",
     targetDuration: 30,
     currentDuration: 15,
     startDate: new Date("2024-01-01"),
@@ -111,9 +111,9 @@ export const allStreaks: Streak[] = [
     completed: false,
   },
   {
-    id: 9,
+    id: "9",
     title: "Stretching",
-    description: "10 minutes of stretching exercises",
+    subtitle: "10 minutes of stretching exercises",
     targetDuration: 10,
     currentDuration: 5,
     startDate: new Date("2024-01-01"),

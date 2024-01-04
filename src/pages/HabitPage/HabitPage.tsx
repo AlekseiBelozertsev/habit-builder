@@ -1,6 +1,6 @@
 import React from "react";
 import { useParams } from "react-router-dom";
-import { Habit } from "../../config";
+import { Habit, Streak, allStreaks } from "../../config";
 import PageNotFound from "../PageNotFound/PageNotFound";
 import { Icon } from "../../components";
 import { List } from "../../collections";
@@ -24,6 +24,7 @@ const HabitPage: React.FC<HabitPageProps> = ({ data }) => {
         <span className={`font-['Roboto, font-sans'] text-gray-600 text-sm`}>
           {currentPage?.subtitle}
         </span>
+        <List component='Streak' elements={currentPage?.streaks} />
       </div>
     );
   } else {
