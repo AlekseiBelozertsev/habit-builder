@@ -1,4 +1,6 @@
 import React from "react";
+import { Icon } from "../../components";
+const arrowIcon = require("../../assets/arrowDown.svg").default;
 
 type StreakComponentProps = {
   title: string;
@@ -10,11 +12,14 @@ const StreakComponent: React.FC<StreakComponentProps> = ({
   subtitle,
 }) => {
   return (
-    <div className='w-full h-5'>
-      <h3 className={`font-['Roboto, font-sans'] font-bold`}>{title}</h3>
-      {/* <span className={`font-['Roboto, font-sans'] text-gray-600 text-sm`}>
-        {subtitle}
-      </span> */}
+    <div className='flex flex-row justify-between items-center w-full h-16'>
+      <div className='flex flex-col'>
+        <h3 className={`font-['Roboto, font-sans'] font-bold`}>{title}</h3>
+        <span className={`font-['Roboto, font-sans'] text-gray-600 text-sm`}>
+          {subtitle}
+        </span>
+      </div>
+      <Icon h={5} w={5} path={arrowIcon} />
     </div>
   );
 };

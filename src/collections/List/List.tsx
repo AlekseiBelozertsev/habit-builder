@@ -13,7 +13,13 @@ const List: React.FC<ListProps> = ({ numOfRows, elements, component }) => {
   const habits = elements.slice(0, numOfRows);
   const navigate = useNavigate();
   return (
-    <div className='grid lg:grid-cols-4 lg:gap-6 s:grid-cols-1 s:grid-rows-6 w-full h-full lg:pb-6 gap-0.5 divide-y divide-gray-200'>
+    <div
+      className={`grid lg:grid-cols-4 lg:gap-6 s:grid-cols-1 s:grid-rows-6 w-full lg:pb-6 ${
+        component === "Streak"
+          ? `divide-y-2 divide-solid divide-cyan-500`
+          : `h-full`
+      } gap-0.5 divide-y divide-gray-200`}
+    >
       {component === "Habit"
         ? habits.map((item, i) => (
             <HabitComponent
