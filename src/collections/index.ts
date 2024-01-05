@@ -5,6 +5,8 @@ import ScrollableCollection from "./ScrollableCollection/ScrollableCollection";
 import List from "./List/List";
 import Footer from "./Footer/Footer";
 import StreakComponent from "./StreakComponent/StreakComponent";
+import CounterPanel from "./CounterPanel/CounterPanel";
+import HabitProfile from "./HabitProfile/HabitProfile";
 
 export {
   Header,
@@ -14,4 +16,6 @@ export {
   List,
   Footer,
   StreakComponent,
+  CounterPanel,
+  HabitProfile,
 };
